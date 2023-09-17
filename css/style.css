@@ -1,0 +1,190 @@
+/* banner section */
+#banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* banner title container */
+#banner-title-container{
+    border-left: 5px solid;
+    border-image: linear-gradient(indianred, orange);
+    border-image-slice: 1;
+    padding-left: 15px;
+}
+/* banner title */
+#banner-title{
+    color: orange;
+}
+/* banner image */
+#banner-image{
+    display: flex;
+    justify-content: center;
+}
+#banner-image img{
+    height: 400px;
+}
+/* banner image 2 */
+#banner-image-2{
+    display: none;
+}
+#banner-image-2 img{
+    display: none;
+    height: 400px;
+}
+/* font size and font weight */
+.fs-1{
+    font-weight: 620;
+}
+/* paragraph tag */
+p{
+    font-size: 15px;
+}
+/* text color orange */
+.text-orange{
+    color: orange;
+}
+/* button */
+.btn{
+    background: linear-gradient(to right, indianred, orange);
+    height: 40px;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+/* my mission container */
+#my-mission-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* my mission container image */
+#my-mission-container div img{
+    height: 100px;
+    width: 100px;
+}
+/* mission */
+#my-mission-container #mission{
+    background-color: rgba(0, 140, 255, 0.13);
+}
+/* vission */
+#my-mission-container #vission{
+    background-color: rgba(255, 0, 55, 0.116);
+}
+/* goals */
+#my-mission-container #goals{
+    background-color: rgba(255, 238, 0, 0.233);
+}
+/* develop-container */
+#develop-container{
+    display: flex;
+    align-items: center;
+}
+/* coding-image */
+#coding-image{
+    height: 300px;
+}
+/* develop-text-container */
+#develop-text-container{
+    padding-left: 40px;
+}
+/* global-community */
+#global-community{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+/* global-community > image */
+#project-image{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+/* global-community > image 2 */
+#project-image-2{
+    display: none;
+    height: 300px;
+}
+/* corona-application */
+#corona-application{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+/* ======================================== */
+/* ============= MEDIA QUERY ============== */
+/* ======================================== */
+/* max width 780px */
+@media (max-width: 780px) {
+    /* banner */
+    #banner{
+        display: block;
+    }
+    /* hide main banner banner image */
+    #banner-image{
+        display: none;
+    }
+    /* display banner second image */
+    #banner-image-2{
+        display: flex;
+        justify-content: center;
+    }
+    #banner-image-2 img{
+        display: block;
+    }
+    /* my-mission-container */
+    #my-mission-container{
+        display: block;
+    }
+    /* my-mission-container > div */
+    #my-mission-container div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    /* develop-container */
+    #develop-container{
+        display: block;
+    }
+    /* coding image */
+    #coding-image{
+        width: 100%;
+    }
+    /* develop-text-container */
+    #develop-text-container{
+        padding-left: 0px;
+        padding-top: 15px;
+        text-align: center;
+    }
+    /* global-community */
+    #global-community{
+        display: block;
+    }
+    /* hide project image */
+    #project-image{
+        display: none;
+    }
+    /* display project image 2 */
+    #project-image-2{
+        display: flex;
+        justify-content: center;
+    }
+    #project-image-2 img{
+        width: 100%;
+    }
+    /* global-community-text-container */
+    #global-community-text-container{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    /* corona-application */
+    #corona-application{
+        display: block;
+        text-align: center;
+    }
+}
+/* max width 340px */
+@media (max-width: 340px) {
+    /* banner > text container */
+    #text-container{
+        text-align: center;
+    }
+}
